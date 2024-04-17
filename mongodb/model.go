@@ -11,12 +11,11 @@ type (
 	//
 	// This interface can be used as a query constraint for documents that wrap [BaseModel] or a similar struct.
 	Document[T any] interface {
-		InitMongoID()
-		SetUpdatedAt(updatedAt time.Time)
-		SetCreatedAt(createdAt time.Time)
-		InitDocument()
-		ResetMongoID()
-		GetDoc() T
+		InitMongoID() 
+		SetUpdatedAt(updatedAt time.Time) 
+		SetCreatedAt(createdAt time.Time) 
+		InitDocument() 
+		ResetMongoID() 
 	}
 
 	// BaseModel contains all the fields that most documents should have
